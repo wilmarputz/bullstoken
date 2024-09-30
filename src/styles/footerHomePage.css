@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent; /* Make the footer slightly transparent */
+    margin-top: 100px; /* Add a top margin */
+    font-weight: bold;
+}
+
+footer div a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px; /* Give more space between the links */
+    padding: 10px; /* Make the links easier to click on smaller screens */
+}
+
+footer div a i {
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 756px) {
+    footer {
+        margin-top: 50px; /* Reduce the top margin for smaller screens */
+        display: ruby-text;
+    }
+
+    .footerPhrase { 
+        font-size: 14px;
+        margin-left: 10%;
+        font-weight: bold;
+    }
+
+    footer div {
+        display: inline-block;
+    }
+
+    footer div a {
+        margin-right: 0; /* Remove the right margin */
+        display: block;
+        font-weight: bold;
+    }
+
+}

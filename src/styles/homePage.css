@@ -1,0 +1,127 @@
+/* Hero Section Styles */
+.hero {
+    margin-left: 5%;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2; /* Adjust as needed to control the line break */
+  }
+  
+  .hero h2 {
+    font-size: 30px;
+    color: #F21F20;
+  }
+  
+  
+  .hero b {
+    transition: background-color 0.5s ease;
+  }
+  
+  .hero b:hover {
+    color: #F21F20;
+    transform: scaleX(1.05);
+  }
+  
+  /* Blink effect for .hero strong */
+  @keyframes blink {
+    0% { color: #F21F20; }
+    50% { color: #501111; }
+    100% { color: #F21F20; }
+  }
+  
+  .hero strong {
+    animation: blink 1s linear infinite;
+    color: #ff0000;
+  }
+  
+  .hero strong:hover {
+    color: #000000;
+    transform: scale(1.05);
+  }
+  
+  /* Button Styles */
+  .heroButton {
+    font-family: "Sixtyfour";
+    margin-top: 40px;
+    width: 100%;
+    height: 135px;
+    background-color: #F21F20;
+    color: #fff;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .heroButton:hover {
+    background-color: #b91617;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heroTitle {
+    display: flex;
+    align-items: center; /* This will vertically center the items if they have different heights */
+    justify-content: space-between;
+  }
+  
+  .heroTitle img {
+    width: 25%;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .hero {
+         font-size: 20px;
+         display: flex;
+         align-items: center;
+     }
+  
+     .heroTitle {
+          flex-direction: column;
+          align-items: center;
+          margin-left: 20%;
+     }
+  
+     .hero a {
+        width: 55%;
+     }
+  
+    button {
+         width: 30%;
+     }
+  
+    .hero h1 {
+         font-size: 20px;
+     }
+  
+     .hero h2 {
+      font-size: 16px;
+  }
+     
+  
+    .hero p {
+         font-size: 50px;
+     }
+  
+  
+     .heroTitle img {
+      margin-top: 30px;
+    }
+  
+  
+  }
+  
+  

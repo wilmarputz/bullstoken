@@ -1,0 +1,68 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body and global styles */
+  body {
+    background-color: #f4e9d8;
+  }
+  
+  /* Container for the content */
+  .content-wrapper {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px auto;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1), -10px -10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: "Lexend", sans-serif ;
+}
+  
+  /* Styles for headings */
+ .content-wrapper h1 {
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .content-wrapper p{
+    font-size: 18px;
+    color: black;
+    margin: 20px 0;
+  }
+  
+  /* Section styles */
+  
+  /* Image styles */
+/* Image styles */
+img {
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+  a {
+    text-decoration: none;
+  }
+
+
+  @media (max-width: 800px) {
+    .content-wrapper {
+        width: 90%;
+    }
+    .content-wrapper h1 {
+         font-size: 40px;
+     }
+
+    .content-wrapper p {
+         font-size: 16px;
+     }
+ }

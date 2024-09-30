@@ -1,0 +1,113 @@
+
+  /* Global Styles */
+  body {
+    background: rgb(255,255,239);
+    background: linear-gradient(90deg, rgba(255,255,239,1) 0%, rgba(254,255,219,1) 38%, rgba(241,242,205,1) 100%);
+    font-family: "Sixtyfour";
+  }
+  
+  
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 10px 20px;
+  }
+  
+  /* Logo Styles */
+
+  .logo img{
+    width: 150px;
+    height: 150px;
+    margin-left: 15%;
+  }
+
+  .logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-family: "Lexend";
+    margin-left: 100px;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 60px;
+    color: #ff0000;
+}
+
+.logo b {
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+/* Blink effect for .hero strong */
+@keyframes blink {
+  0% { color: #F21F20; }
+  50% { color: #501111; }
+  100% { color: #F21F20; }
+}
+
+  /* Navigation Styles */
+  nav {
+    margin-right: 200px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  /* Navigation Link Styles */
+  nav ul li a {
+    color: #000;
+    text-decoration: none; 
+  }
+  nav ul li a:hover {
+    color: red;
+    transform: scale(1.5) transform .2s/* Increase the scale value for a more pronounced zoom effect */
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+      background: none;
+      background-color: rgba(241,242,205,1);
+    }
+  
+    header {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+   .logo img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    header h1 {
+      font-size: 30px;
+      margin-left: 0;
+    }
+  
+    nav {
+      margin-right: 0;
+    }
+  
+    nav ul li { /* Updated margin value */
+      font-weight: bold;
+    }
+  
+    nav ul li a {
+      font-size: 14px;
+    }
+  }
